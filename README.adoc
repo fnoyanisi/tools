@@ -10,7 +10,7 @@ _show-batter_ is a tool to display battery information in a nice way. The output
 ** *version 2.0 - (May 2018)*	
 ** show-battery and print256colours added
 
-*version 1.0 - (2015)*	
+** *version 1.0 - (2015)*	
 ** Initial version
 
 == License
