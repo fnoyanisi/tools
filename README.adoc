@@ -1,0 +1,23 @@
+== About  
+
+_lcd-brigthness_ is a simple shell script that can be used to change the backlight of Toshiba laptops running FreeBSD operating system. The script uses hw.acpi.toshiba sysctl tunable to adjust the backlight. 
+
+x11/xdialog port is required to be installed.
+
+_show-batter_ is a tool to display battery information in a nice way. The output of the script can be used in tmux status bar.
+
+== Version History
+** *version 2.0 - (May 2018)*	
+** show-battery and print256colours added
+
+*version 1.0 - (2015)*	
+** Initial version
+
+== License
+
+_lcd-brigthness_ and _show-battery_ can be distributed, modified and used under the terms of 2-clause BSD license (FreeBSD license). 
+
+For other scripts, see the individual script for the licensing information.
+
+Fehmi Noyan ISI
+mailto:fnoyanisi@yahoo.com[fnoyanisi@yahoo.com] 

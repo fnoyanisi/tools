@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# Copyright (c) 2015 Fehmi Noyan ISI. All rights reserved.
+# See the LICENSE for usage information
+#
+# Simple shell script to display battery status in FreeBSD
+# The output can be used in tmux status bar
+remaining_time=`acpiconf -i 0 | awk '/Remaining time/ {print \$3}'`
+remaining_cap=`acpiconf -i 0 | awk '/Remaining capacity/ {print \$3}'`
+
+if [ $remaining_time == "unknown" ]; then
+	remaining_time="charging"
+fi
+
+echo "Battery : $remaining_cap ($remaining_time)"
